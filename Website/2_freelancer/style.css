@@ -106,3 +106,51 @@ nav .logo {
   max-width: 360px;
   font-weight: 500;
 }
+
+.user-img {
+  width: 80%;
+  max-width: 500;
+  position: absolute;
+  right: 13%;
+  bottom: 0;
+}
+
+.header h1 span {
+  background: linear-gradient(#000, #000);
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 50%;
+}
+
+.header h1 span:first-child {
+  animation: textcolor1 2s linear infinite alternate;
+}
+
+.header h1 span:last-child {
+  animation: textcolor2 2s linear infinite alternate;
+}
+
+@keyframes textcolor1 {
+  0% {
+    background-size: 0%;
+  }
+  40% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes textcolor2 {
+  0% {
+    background-size: 0%;
+  }
+  40% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
