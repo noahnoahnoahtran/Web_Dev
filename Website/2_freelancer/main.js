@@ -6,3 +6,13 @@ window.onscroll = function () {
     navbar.style.background = "transparent";
   }
 };
+
+let menuIcon = document.querySelector(".menu-icon");
+
+let menuLinks = document.getElementById("menu-links");
+
+menuIcon.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+  menuLinks.classList.toggle("show-menu");
+}
