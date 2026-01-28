@@ -1,7 +1,9 @@
 :root {
-  --black: #131110;
   --secondary: rgba(255, 255, 255, 0.78);
+  --black: #131110;
+  --blue: #4066ff;
   --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
 }
 
 * {
@@ -26,6 +28,25 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.flexColCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexColStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.secondaryText {
+  color: rgb(140 139 139);
+  font-size: 0.9rem;
 }
 
 .button {
