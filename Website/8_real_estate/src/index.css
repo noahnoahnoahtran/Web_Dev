@@ -44,9 +44,19 @@
   align-items: flex-start;
 }
 
+.primaryText {
+  color: #1f3e72;
+  font-weight: bold;
+  font-size: 2rem;
+}
 .secondaryText {
   color: rgb(140 139 139);
   font-size: 0.9rem;
+}
+.orangeText {
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .button {

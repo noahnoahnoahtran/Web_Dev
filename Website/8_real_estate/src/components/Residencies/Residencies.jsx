@@ -9,8 +9,8 @@ function Residencies() {
     <section className="r-wrapper">
       <div className="paddings innerWidth r-container">
         <div className="r-head flexColStart">
-          <span>Best Choices</span>
-          <span>Popular Residencies</span>
+          <span className="orangeText">Best Choices</span>
+          <span className="primaryText">Popular Residencies</span>
         </div>
       </div>
     </section>
