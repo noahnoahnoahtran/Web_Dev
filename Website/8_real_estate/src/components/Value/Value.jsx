@@ -12,6 +12,33 @@ import "react-accessible-accordion/dist/fancy-example.css";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import data from "../../utils/accordion";
 
+const AccordionItemComponent = ({ item, i }) => {
+  const [className, setClassName] = useState();
+  return (
+    <AccordionItem className={`accordionItem ${className}`} key={i} uuid={i}>
+      <AccordionItemHeading>
+        <AccordionItemButton className="flexCenter accordionButton">
+          <AccordionItemState>
+            {({ expanded }) => {
+              const status = expanded ? "expanded" : "collapsed";
+              if (className != status) setClassName(status);
+              return null;
+            }}
+          </AccordionItemState>
+          <div className="flexCenter icon">{item.icon}</div>
+          <span className="primaryText">{item.heading}</span>
+          <div className="flexCenter icon">
+            <MdOutlineArrowDropDown size={20} />
+          </div>
+        </AccordionItemButton>
+      </AccordionItemHeading>
+      <AccordionItemPanel>
+        <p className="secondaryText">{item.detail}</p>
+      </AccordionItemPanel>
+    </AccordionItem>
+  );
+};
+
 function Value() {
   return (
     <section className="v-wrapper">
@@ -36,24 +63,9 @@ function Value() {
             allowMultipleExpanded={false}
             preExpanded={[0]}
           >
-            {data.map((item, i) => {
-              return (
-                <AccordionItem className="accordionItem" key={i} uuid={i}>
-                  <AccordionItemHeading>
-                    <AccordionItemButton className="flexCenter accordionButton">
-                      <div className="flexCenter icon">{item.icon}</div>
-                      <span className="primaryText">{item.heading}</span>
-                      <div className="flexCenter icon">
-                        <MdOutlineArrowDropDown size={20} />
-                      </div>
-                    </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <p className="secondaryText">{item.detail}</p>
-                  </AccordionItemPanel>
-                </AccordionItem>
-              );
-            })}
+            {data.map((item, i) => (
+              <AccordionItemComponent item={item} i={i} key={i} />
+            ))}
           </Accordion>
         </div>
       </div>
