@@ -12,6 +12,9 @@ function GetStarted() {
             <br />
             Find your residence soon
           </span>
+          <button className="button">
+            <a href="mailto:abc@gmail.com">Get Started</a>
+          </button>
         </div>
       </div>
     </section>
