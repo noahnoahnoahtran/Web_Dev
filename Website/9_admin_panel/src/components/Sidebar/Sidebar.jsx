@@ -1,8 +1,19 @@
 import React from "react";
+import Logo from "../../imgs/logo.png";
 import "./Sidebar.css";
 
 function Sidebar() {
-  return <div>Sidebar</div>;
+  return (
+    <section className="Sidebar">
+      {/* logo */}
+      <div className="logo">
+        <img src={Logo} alt="" />
+        <span>
+          Sh<span>o</span>ps
+        </span>
+      </div>
+    </section>
+  );
 }
 
 export default Sidebar;

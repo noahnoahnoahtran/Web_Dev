@@ -5,9 +5,10 @@ function App() {
   return (
     <div className="App">
       <div className="AppGlass">
-        Testinggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
         <Sidebar />
       </div>
+      <div></div>
+      <div></div>
     </div>
   );
 }
