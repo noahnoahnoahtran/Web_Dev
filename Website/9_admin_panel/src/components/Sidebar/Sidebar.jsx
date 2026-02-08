@@ -19,7 +19,7 @@ function Sidebar() {
       <div className="menu">
         {SidebarData.map((item, i) => {
           return (
-            <div className="menuItem">
+            <div className="menuItem active">
               <item.icon />
               <span>{item.heading}</span>
             </div>
