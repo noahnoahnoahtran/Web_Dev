@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Cards.css";
 import { CardsData } from "../../Data/Data";
+import Card from "../Card/Card";
 
 function Cards() {
   return (
@@ -11,7 +12,7 @@ function Cards() {
             <Card
               title={card.title}
               color={card.color}
-              barValue={card.barvalue}
+              barvalue={card.barvalue}
               value={card.value}
               png={card.png}
               series={card.series}

@@ -6,6 +6,8 @@ import {
   UilPackage,
   UilChart,
   UilSignOutAlt,
+  UilUsdSquare,
+  UilMoneyWithdrawal,
 } from "@iconscout/react-unicons";
 
 // Sidebar data
@@ -70,7 +72,7 @@ export const CardsData = [
     title: "Expenses",
     color: {
       background:
-        "linear-gradient(rgb(248, 212, 154) - 146.42%, rgb(255 202 113) -46.42%)",
+        "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255, 202, 113) -46.42%)",
       boxshadow: "0px 10px 20px 0px #f9d59b",
     },
     barvalue: 60,
