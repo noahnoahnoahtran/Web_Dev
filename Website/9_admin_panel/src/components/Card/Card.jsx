@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AnimateSharedLayout } from "framer-motion";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import { UilTimes } from "@iconscout/react-unicons";
 import "./Card.css";
 
 function Card(props) {
@@ -42,6 +43,27 @@ function CompactCard({ param, setExpanded }) {
         <span>${param.value}</span>
         <span>Last 24 hours</span>
       </div>
+    </div>
+  );
+}
+
+// ExpandedCard
+
+function ExpandedCard({ param, setExpanded }) {
+  return (
+    <div
+      className="ExpandedCard"
+      style={{
+        background: param.color.background,
+        boxShadow: param.color.boxshadow,
+      }}
+    >
+      <div>
+        <UilTimes onClick={setExpanded} />
+      </div>
+      <span>{param.title}</span>
+      <div className="chartContainer">Chart</div>
+      <span>Last 24 hours</span>
     </div>
   );
 }
