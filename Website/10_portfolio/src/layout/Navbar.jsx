@@ -1,3 +1,5 @@
+import { Button } from "@/components/Button.jsx";
+
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
@@ -32,7 +34,7 @@ export const Navbar = () => {
         </div>
         {/* CTA Button */}
         <div>
-          <button></button>
+          <button>Contact Me</button>
         </div>
       </nav>
     </header>
