@@ -35,13 +35,13 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                Software Engineering Enthusiast
               </span>
             </div>
 
             {/* Headline */}
-            <div>
-              <h1>
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in">
                 Crafting <span className="text-primary glow-text">digital</span>
                 <br />
                 experiences with <br />
@@ -49,6 +49,11 @@ export const Hero = () => {
                   precision.
                 </span>
               </h1>
+              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in">
+                Hi, I'm Noah Tran - a software engineering enthusiast
+                specializing in React.js, Next.js, and TypeScript. I build
+                scalable, performant web applications that users love.
+              </p>
             </div>
           </div>
           {/* Right Column - Profile Image */}
