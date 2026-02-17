@@ -1,6 +1,6 @@
 import { Button } from "@/components/Button.jsx";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Globe, Music2 } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -66,6 +66,30 @@ export const Hero = () => {
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
               <AnimatedBorderButton />
+            </div>
+
+            {/* Social Links */}
+            <div>
+              <span>Follow: </span>
+              {[
+                { icon: Github, href: "https://github.com/noahtran96" },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/noahtran96",
+                },
+                {
+                  icon: Globe,
+                  href: "https://justachillgeek.wordpress.com/",
+                },
+                {
+                  icon: Music2,
+                  href: "https://www.tiktok.com/@noahisblogging",
+                },
+              ].map((social, index) => (
+                <a key={index} href={social.href}>
+                  {<social.icon />}
+                </a>
+              ))}
             </div>
           </div>
           {/* Right Column - Profile Image */}
