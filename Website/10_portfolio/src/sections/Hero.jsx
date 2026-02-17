@@ -1,3 +1,7 @@
+import { Button } from "@/components/Button.jsx";
+import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+import { ArrowRight } from "lucide-react";
+
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -54,6 +58,14 @@ export const Hero = () => {
                 specializing in React.js, Next.js, and TypeScript. I build
                 scalable, performant web applications that users love.
               </p>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+              <Button size="lg">
+                Contact Me <ArrowRight className="w-5 h-5" />
+              </Button>
+              <AnimatedBorderButton />
             </div>
           </div>
           {/* Right Column - Profile Image */}
