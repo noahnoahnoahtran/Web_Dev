@@ -1,6 +1,13 @@
 import { Button } from "@/components/Button.jsx";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
-import { ArrowRight, Github, Linkedin, Globe, Music2 } from "lucide-react";
+import {
+  ArrowRight,
+  Github,
+  Linkedin,
+  Globe,
+  Music2,
+  ChevronDown,
+} from "lucide-react";
 
 const skills = [
   "React.js",
@@ -154,6 +161,17 @@ export const Hero = () => {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Scroll Icon */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
+          <a
+            href="#about"
+            className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary"
+          >
+            <span className="text-xs uppercase tracking-wider">Scroll</span>
+            <ChevronDown className="w-6 h-6 animate-bounce" />
+          </a>
         </div>
       </div>
     </section>
