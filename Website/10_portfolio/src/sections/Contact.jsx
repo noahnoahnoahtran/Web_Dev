@@ -1,3 +1,4 @@
+import { Button } from "@/components/Button.jsx";
 import {
   Mail,
   Phone,
@@ -67,6 +68,8 @@ export const Contact = () => {
                 <input
                   id="name"
                   type="text"
+                  required
+                  placeholder="Your name..."
                   className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus_ring-primary outline-none transition-all"
                 />
               </div>
@@ -80,6 +83,8 @@ export const Contact = () => {
                 <input
                   id="email"
                   type="email"
+                  required
+                  placeholder="your@email.com"
                   className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus_ring-primary outline-none transition-all"
                 />
               </div>
@@ -91,10 +96,15 @@ export const Contact = () => {
                   Message
                 </label>
                 <textarea
-                  id="message"
+                  rows={5}
+                  required
+                  placeholder="Your message..."
                   className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus_ring-primary outline-none transition-all resize-none"
                 />
               </div>
+              <Button className="w-full" type="submit" size="lg">
+                Send Message <Send />
+              </Button>
             </form>
           </div>
         </div>
