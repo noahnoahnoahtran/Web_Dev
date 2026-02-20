@@ -54,7 +54,50 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div></div>
+        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300">
+            <form className="space-y-6">
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2"
+                >
+                  Name
+                </label>
+                <input
+                  id="name"
+                  type="text"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus_ring-primary outline-none transition-all"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"
+                >
+                  Email
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus_ring-primary outline-none transition-all"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus_ring-primary outline-none transition-all resize-none"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   );
