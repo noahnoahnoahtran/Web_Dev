@@ -55,7 +55,7 @@ export const Experience = () => {
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            A timeline of my profressional growth, from curious beginner to
+            A timeline of my professional growth, from curious beginner to
             senior engineer leading teams and building products at scale.
           </p>
         </div>
@@ -65,6 +65,28 @@ export const Experience = () => {
           {/* Line */}
           <div className="timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/70 via-primary/30 to-transparent md:-translate-x-1/2 shadow-[0_0_25px_rgba(var(--primary), 0.8)]" />
           {/* Experience Items */}
+          <div className="space-y-12">
+            {experiences.map((experience, index) => (
+              <div key={index}>
+                {/* Timeline Dot */}
+                <div></div>
+                {/* Content */}
+                <div>
+                  <div>
+                    <span>{experience.period}</span>
+                    <h3>{experience.role}</h3>
+                    <p>{experience.company}</p>
+                    <p>{experience.description}</p>
+                    <div>
+                      {experience.technologies.map((technology, techIndex) => (
+                        <span>{technology}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
