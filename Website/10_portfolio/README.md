@@ -1,16 +1,77 @@
-# React + Vite
+# 🌌 Noah Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and fully responsive personal portfolio website built with **React** and **Tailwind CSS**.  
+This project showcases my projects, experience, testimonials, and contact information through a sleek glassmorphism UI with smooth animations and interactive components.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fully responsive multi-section portfolio layout  
+- Glassmorphism UI with custom theme variables  
+- Animated hero section with floating effects  
+- Reusable UI components (Button, AnimatedBorderButton)  
+- Featured projects showcase with hover effects  
+- Interactive experience timeline  
+- Testimonial carousel with navigation  
+- Functional contact form powered by EmailJS  
+- Smooth scroll navigation and animated transitions  
+- Reusable components & sections:
+  - Navbar  
+  - Hero  
+  - About  
+  - Projects  
+  - Experience  
+  - Testimonials  
+  - Contact  
+  - Footer  
+  - Button  
+  - AnimatedBorderButton  
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Functional components & Hooks)  
+- Tailwind CSS (Custom theme & utilities)  
+- JavaScript (ES6+)  
+- EmailJS (Contact form integration)  
+- Lucide React (Icons)  
+- CSS Custom Animations  
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Install dependencies**
+```bash
+npm install
+```
+
+**Set up environment variables**
+
+Create a `.env` file and add:
+
+```
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+**Run the project**
+```bash
+npm run dev
+```
+
+The app runs locally at:  
+`http://localhost:3000`  
+(depending on your Vite configuration)
+
+## 📚 Learning Outcomes
+
+- Structuring a scalable React project  
+- Creating reusable UI components  
+- Implementing advanced UI animations  
+- Designing with Tailwind CSS and custom themes  
+- Managing state with React hooks  
+- Integrating third-party services (EmailJS)  
+- Building interactive UI elements (carousel, timeline, animated buttons)
+
+## 📺 Credits
+
+This project was built by following a [YouTube tutorial](https://www.youtube.com/watch?v=cIYdiRDFWQw) for educational purposes.  
+All credit for the original idea and guidance belongs to the tutorial creator.
