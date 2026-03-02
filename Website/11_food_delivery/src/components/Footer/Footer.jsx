@@ -8,7 +8,13 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
           <img src={assets.logo} alt="logo" />
-          <p>abcd</p>
+          <p>
+            We are committed to bringing the freshest ingredients and the most
+            delicious meals from local kitchens straight to your dining table.
+            Our mission is to satisfy your cravings with speed, quality, and a
+            touch of love in every order. Experience the best taste in town with
+            Tomato.
+          </p>
           <div className="footer-social-icons">
             <img src={assets.facebook_icon} alt="facebook icon" />
             <img src={assets.twitter_icon} alt="twitter icon" />
