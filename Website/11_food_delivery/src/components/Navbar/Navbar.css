@@ -13,7 +13,7 @@
   display: flex;
   list-style: none;
   gap: 20px;
-  color: #49557e;
+  color: var(--text-content);
   font-size: 18px;
 }
 
@@ -27,7 +27,7 @@
   background: transparent;
   font-size: 16px;
   color: #49557e;
-  border: 1px solid tomato;
+  border: 1px solid var(--primary-color);
   padding: 10px 30px;
   border-radius: 15px;
   cursor: pointer;
@@ -55,7 +55,7 @@
   position: absolute;
   min-width: 10px;
   min-height: 10px;
-  background-color: tomato;
+  background-color: var(--primary-color);
   border-radius: 50%;
   top: -8px;
   right: -8px;
