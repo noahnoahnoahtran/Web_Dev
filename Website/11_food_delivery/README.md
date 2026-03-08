@@ -1,16 +1,79 @@
-# React + Vite
+# 🍅 Tomato Food Ordering Website (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive food ordering website built with **React**.  
+The application allows users to browse food categories, add items to a cart, and simulate the checkout process through a clean and responsive interface.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse food items by category
+- Interactive food cards displaying:
+  - Image
+  - Name
+  - Description
+  - Price
+- Add / remove items from cart
+- Dynamic cart total calculation
+- Cart page with item summary
+- Checkout form with delivery information
+- Login / Sign Up popup interface
+- Responsive layout for different screen sizes
 
-## React Compiler
+Reusable React components:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Navbar
+- Header
+- ExploreMenu
+- FoodDisplay
+- FoodItem
+- AppDownload
+- LoginPopup
+- Footer
 
-## Expanding the ESLint configuration
+Pages:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Home
+- Cart
+- PlaceOrder
+
+## 🛠 Tech Stack
+
+- React (Functional Components & Hooks)
+- React Router DOM
+- React Context API (State Management)
+- JavaScript (ES6)
+- CSS
+
+## 🚀 Getting Started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the project:
+
+```bash
+npm start
+```
+
+The app runs locally at:
+
+```
+http://localhost:3000
+```
+
+## 📚 Learning Outcomes
+
+- Building a multi-page React application
+- Using React Router for navigation
+- Managing global state with React Context
+- Creating reusable React components
+- Implementing a shopping cart system
+- Handling dynamic UI updates with React hooks
+- Structuring a medium-size React project
+
+## 📺 Credits
+
+This project was built by following a [YouTube tutorial](https://www.youtube.com/watch?v=9jRTo7ILxQc) for educational purposes.  
+All credit for the original idea and guidance belongs to the tutorial creator.
