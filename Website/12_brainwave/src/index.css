@@ -35,7 +35,6 @@
   --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
   --font-code: "Source Code Pro", monospace;
   --font-grotesk: "Space Grotesk", sans-serif;
-  color-scheme: dark;
 
   /* Custom Spacing & Utilities */
   --tracking-tagline: 0.15em;
@@ -66,12 +65,14 @@
 
 /* --- 3. BASE STYLES --- */
 @layer base {
+  :root {
+    color-scheme: dark;
+  }
   * {
     scroll-behavior: smooth;
   }
   body {
     @apply font-sans bg-n-8 text-n-1 text-base;
-    color-scheme: dark;
   }
 }
 

@@ -1,3 +1,5 @@
+import ButtonGradient from "./assets/";
+
 function App() {
   return (
     <>
