@@ -1,4 +1,4 @@
-import ButtonGradient from "./assets/";
+import ButtonGradient from "./assets/svg/ButtonGradient.jsx";
 
 function App() {
   return (
