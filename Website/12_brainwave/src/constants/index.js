@@ -1,40 +1,39 @@
-import {
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitImage2,
-  chromecast,
-  disc02,
-  discord,
-  discordBlack,
-  facebook,
-  figma,
-  file02,
-  framer,
-  homeSmile,
-  instagram,
-  notification2,
-  notification3,
-  notification4,
-  notion,
-  photoshop,
-  plusSquare,
-  protopie,
-  raindrop,
-  recording01,
-  recording03,
-  roadmap1,
-  roadmap2,
-  roadmap3,
-  roadmap4,
-  searchMd,
-  slack,
-  sliders04,
-  telegram,
-  twitter,
-  yourlogo,
-} from "../assets";
+import benefitIcon1 from "../assets/benefits/icon-1.svg";
+import benefitIcon2 from "../assets/benefits/icon-2.svg";
+import benefitIcon3 from "../assets/benefits/icon-3.svg";
+import benefitIcon4 from "../assets/benefits/icon-4.svg";
+import benefitImage2 from "../assets/benefits/image-2.png";
+import discord from "../assets/collaboration/discord.png";
+import figma from "../assets/collaboration/figma.png";
+import framer from "../assets/collaboration/framer.png";
+import notion from "../assets/collaboration/notion.png";
+import photoshop from "../assets/collaboration/photoshop.png";
+import protopie from "../assets/collaboration/protopie.png";
+import raindrop from "../assets/collaboration/raindrop.png";
+import notification2 from "../assets/notification/image-2.png";
+import notification3 from "../assets/notification/image-3.png";
+import notification4 from "../assets/notification/image-4.png";
+import roadmap1 from "../assets/roadmap/image-1.png";
+import roadmap2 from "../assets/roadmap/image-2.png";
+import roadmap3 from "../assets/roadmap/image-3.png";
+import roadmap4 from "../assets/roadmap/image-4.png";
+import telegram from "../assets/socials/telegram.svg";
+import twitter from "../assets/socials/twitter.svg";
+
+//   chromecast,
+//   disc02,
+//   discordBlack,
+//   facebook,
+//   file02,
+//   homeSmile,
+//   instagram,
+//   plusSquare,
+//   recording01,
+//   recording03,
+//   searchMd,
+//   slack,
+//   sliders04,
+//   yourlogo
 
 export const navigation = [
   {
@@ -71,11 +70,11 @@ export const navigation = [
   },
 ];
 
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
+// export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+// export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
   "Photo generating",
@@ -83,13 +82,13 @@ export const brainwaveServices = [
   "Seamless Integration",
 ];
 
-export const brainwaveServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
-];
+// export const brainwaveServicesIcons = [
+//   recording03,
+//   recording01,
+//   disc02,
+//   chromecast,
+//   sliders04,
+// ];
 
 export const roadmap = [
   {
@@ -168,13 +167,13 @@ export const collabApps = [
     width: 36,
     height: 28,
   },
-  {
-    id: "3",
-    title: "Slack",
-    icon: slack,
-    width: 34,
-    height: 35,
-  },
+  //   {
+  //     id: "3",
+  //     title: "Slack",
+  //     icon: slack,
+  //     width: 34,
+  //     height: 35,
+  //   },
   {
     id: "4",
     title: "Photoshop",
@@ -295,34 +294,34 @@ export const benefits = [
 ];
 
 export const socials = [
-  {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
+  //   {
+  //     id: "0",
+  //     title: "Discord",
+  //     iconUrl: discordBlack,
+  //     url: "#",
+  //   },
   {
     id: "1",
     title: "Twitter",
     iconUrl: twitter,
     url: "#",
   },
-  {
-    id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
+  //   {
+  //     id: "2",
+  //     title: "Instagram",
+  //     iconUrl: instagram,
+  //     url: "#",
+  //   },
   {
     id: "3",
     title: "Telegram",
     iconUrl: telegram,
     url: "#",
   },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
-  },
+  //   {
+  //     id: "4",
+  //     title: "Facebook",
+  //     iconUrl: facebook,
+  //     url: "#",
+  //   },
 ];
